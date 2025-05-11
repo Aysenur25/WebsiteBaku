@@ -1,0 +1,56 @@
+nav {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: font-weight 0.3s;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sayfa içeriği navbar altında başlasın */
+  .content {
+    padding-top: 80px;
+  }
+  
+  /* Genel başlık ve metin düzeni */
+  h2 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  footer {
+    font-size: 14px;
+  }
+  
