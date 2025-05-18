@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Özgeçmişim</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/cv.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Hakkımda</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+      <li><a href="sehrim.html">Şehrim</a></li>
+      <li><a href="mirasimiz.html">Mirasımız</a></li>
+      <li><a href="ilgi_alanlarim.html">İlgi Alanlarım</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="takimimiz.html">Takımımız</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sayfa içeriği -->
+  <header class="bg-primary text-white text-center p-3 mt-5">
+    <h1>Özgeçmiş</h1>
+  </header>
+
+  <main class="container mt-4 content">
+    <section>
+      <h2>Adım ve Soyadım</h2>
+      <p>Ayşenur Askerli</p>
+    </section>
+
+    <section>
+      <h2>Eğitim Bilgilerim</h2>
+      <ul>
+        <li>Lise: Bakü'de 62 numaralı okulda okudum (2013 - 2024)</li>
+        <li>Üniversite: Sakarya Üniversitesi - Bilgisayar Mühendisliği (2024 - 2025)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Beceriler</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Takım çalışması</li>
+        <li>Zaman yönetimi</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Yabancı Dil Bilgim</h2>
+      <p>İngilizce (Orta), Fransızca (Başlangıç)</p>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center p-3 mt-4">
+    &copy; 2025 - Ayşenur Askerli
+  </footer>
+
+  <script>
+    // Aktif link vurgusu
+    const links = document.querySelectorAll('nav ul li a');
+    const currentUrl = window.location.pathname;
+    links.forEach(link => {
+      if (link.getAttribute('href') === currentUrl.split("/").pop()) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
