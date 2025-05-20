@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Takımımız</title>
+  <link rel="stylesheet" href="css/takimimiz.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Hakkımda</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="sehrim.html">Şehrim</a></li>
+      <li><a href="mirasimiz.html">Mirasımız</a></li>
+      <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Kayıt Ol</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="takimimiz.html" class="active">Takımımız</a></li>
+    </ul>
+  </nav>
+
+  <!-- İçerik -->
+  <div class="container">
+    <h1>Bakü'nün Takımı: Neftçi</h1>
+    <p>Bu takım, başkent Bakü'de bulunan ve Azerbaycan futbolunun en üst kademesi olan Azerbaycan Premier Ligi'nde oynayan bir Azerbaycan profesyonel futbol kulübüdür. Kulüp 18 Mart 1937'de kuruldu ve 1968'e kadar Neftyanik adıyla oynadı. O zamandan beri kulüp Neftçi adıyla yarışıyor.</p>
+
+    <h2>Başarılar:</h2>
+    <ul>
+      <li>Azerbaycan Premyer Ligası'nda 9 şampiyonluk kazanmıştır.</li>
+      <li>Azerbaycan Kupası'nda 7 şampiyonluk kazanmıştır.</li>
+      <li>Azerbaycan Süper Kupası'nda 2 şampiyonluğu vardır.</li>
+    </ul>
+
+    <h2>Oyuncular:</h2>
+    <p>Takımın en önemli oyuncuları şunlardır:</p>
+    <ul>
+      <li>Emil Balayev</li>
+      <li>Hüccet Hakverdi</li>
+      <li>Mark Tamas</li>
+    </ul>
+
+    <h2>Takım Fotoğrafları:</h2>
+    <div class="gallery">
+      <img src="img/takim_foto1.jpg" alt="Takım Fotoğrafı 1" width="300">
+      <img src="img/takim_foto2.jpg" alt="Takım Fotoğrafı 2" width="300">
+    </div>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    const currentUrl = window.location.pathname;
+    links.forEach(link => {
+      if (link.getAttribute('href') === currentUrl.split("/").pop()) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
