@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Şehrim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sehrim.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="custom-navbar">
+  <ul>
+    <li><a href="index.html">Hakkımda</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="sehrim.html" class="active">Şehrim</a></li>
+    <li><a href="mirasimiz.html">Mirasımız</a></li>
+    <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="register.html">Kayıt Ol</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="takimimiz.html">Takımımız</a></li>
+  </ul>
+</nav>
+
+
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    const currentUrl = window.location.pathname;
+
+    links.forEach(link => {
+      if (link.getAttribute('href') === currentUrl.split("/").pop()) {
+        link.classList.add('active');
+      }
+    });
+  </script><br><br>
+
+  <header class="bg-success text-white text-center p-4 content">
+    <h1>Şehrim: Baküm</h1>
+  </header>
+
+  <main class="container mt-4">
+    <section>
+      <h2>Nüfusu:</h2>
+      <p>Bakünün nüfusu 2025 yılı itibariyle yaklaşık 2,3 milyondur.</p>
+    </section>
+
+    <section>
+      <h2>Gezilecek Yerleri:</h2>
+      <ul>
+        <li><a href="#IceriSehir">İçeri Şehir</a></li>
+        <li><a href="#KizKulesi">Kız Kulesi</a></li>
+        <li><a href="#BakuBulvari">Bakü Bulvarı</a></li>
+        <li><a href="#DevletBayragiMeydani">Devlet Bayrağı Meydanı</a></li>
+        <li><a href="#AlevKuleleri">Alev Kuleleri</a></li>
+        <li><a href="#HaydarAliyev">Haydar Aliyev Kültür Merkezi</a></li>
+        <li><a href="#TarihMuzesi">Azerbaycan Ulusal Tarih Müzesi</a></li>
+      </ul>
+    </section>
+
+    <!-- Slider -->
+    <div id="sehirSlider" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#IceriSehir"><img src="img/Iceri Sehir.jpeg" class="d-block w-100" alt="Içeri Şehir"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#KizKulesi"><img src="img/Kız Kulesi.jpeg" class="d-block w-100" alt="Kız Kulesi"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#BakuBulvari"><img src="img/Baku Bulvarı.jpeg" class="d-block w-100" alt="Bakü Bulvarı"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#DevletBayragiMeydani"><img src="img/Devlet Bayragı Meydanı.jpeg" class="d-block w-100" alt="Bayrak Meydanı"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#AlevKuleleri"><img src="img/Alev Kuleleri.jpeg" class="d-block w-100" alt="Alev Kuleleri"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#HaydarAliyev"><img src="img/Haydar Aliyev Kultur Merkezi.jpeg" class="d-block w-100" alt="Haydar Aliyev"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#TarihMuzesi"><img src="img/Azerbaycan Ulusal Tarih Muzesi.jpeg" class="d-block w-100" alt="Tarih Müzesi"></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#sehirSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sehirSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Bilgi Bölümleri -->
+    <section id="IceriSehir" class="mt-5">
+      <h3>İçeri Şehir</h3>
+      <p>Azerbaycan'ın başkenti Bakü'nün tarihî çekirdeği olarak bilinmektedir.</p>
+    </section>
+
+    <section id="KizKulesi" class="mt-3">
+      <h3>Kız Kulesi</h3>
+      <p>Bu ikonik kule, Bakü'nün sembollerindendir. 2000 yılından beri UNESCO Dünya Mirası Listesi'ndedir.</p>
+    </section>
+
+    <section id="BakuBulvari" class="mt-3">
+      <h3>Bakü Bulvarı</h3>
+      <p>1909 yılında sahil boyunca kurulan bir gezi yeridir.</p>
+    </section>
+
+    <section id="DevletBayragiMeydani" class="mt-3">
+      <h3>Devlet Bayrağı Meydanı</h3>
+      <p>162 metre uzunluğundaki bayrak, Guinness Rekorlar Kitabı'na "En Uzun Bayrak" olarak geçmiştir.</p>
+    </section>
+
+    <section id="AlevKuleleri" class="mt-3">
+      <h3>Alev Kuleleri</h3>
+      <p>Bakü’nün Sonsuz Alevini sembolize eden ışıklandırmalı üçlü kule yapısıdır.</p>
+    </section>
+
+    <section id="HaydarAliyev" class="mt-3">
+      <h3>Haydar Aliyev Kültür Merkezi</h3>
+      <p>2013'te hizmete açılmış olan bu merkez, 101 bin metrekarelik alana sahiptir.</p>
+    </section>
+
+    <section id="TarihMuzesi" class="mt-3">
+      <h3>Azerbaycan Ulusal Tarih Müzesi</h3>
+      <p>Bakü'nün en büyük ve en değerli müzesidir.</p>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center p-3 mt-4">
+    &copy; 2025 - Şehrim Sayfası
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Hakkımda</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="sehrim.html">Şehrim</a></li>
+    <li><a href="mirasimiz.html">Mirasımız</a></li>
+    <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+    <li><a href="login.html" class="active">Login</a></li>
+    <li><a href="register.html">Kayıt Ol</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="takimimiz.html">Takımımız</a></li>
+  </ul>
+</nav>
+
+<div class="login-container">
+  <h2>Login Sayfası</h2>
+  <form onsubmit="event.preventDefault(); loginCheck();">
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" required />
+
+    <label for="password">Şifre:</label>
+    <input type="password" id="password" required />
+
+    <button type="submit">Giriş Yap</button>
+  </form>
+</div>
+
+<script>
+  function loginCheck() {
+    const enteredEmail = document.getElementById('email').value.trim();
+    const enteredPassword = document.getElementById('password').value;
+
+    const savedEmail = localStorage.getItem('userEmail');
+    const savedPassword = localStorage.getItem('userPassword');
+
+    if (!savedEmail || !savedPassword) {
+      alert("Öncelikle kayıt olmanız gerekiyor!");
+      return;
+    }
+
+    if (enteredEmail === savedEmail && enteredPassword === savedPassword) {
+      alert("Giriş başarılı! Hoş geldiniz.");
+      // Giriş sonrası yönlendirme örneği:
+      window.location.href = "index.html";
+    } else {
+      alert("Kullanıcı adı veya şifre hatalı!");
+    }
+  }
+</script>
+
+</body>
+</html>

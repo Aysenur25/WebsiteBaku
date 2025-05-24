@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirasımız - Kız Kulesi</title>
+  <link rel="stylesheet" href="css/mirasimiz.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Hakkımda</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="sehrim.html">Şehrim</a></li>
+      <li><a href="mirasimiz.html" class="active">Mirasımız</a></li>
+      <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Kayıt Ol</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="takimimiz.html">Takımımız</a></li>
+    </ul>
+  </nav>
+
+  <!-- Başlık -->
+  <header>
+    <h1>Kültürel Mirasımız</h1>
+  </header>
+
+  <!-- İçerik -->
+  <main class="content">
+    <section>
+      <h2>Kız Kulesi (Qız Qalası)</h2>
+      <img src="img/kizkulesi.jpg" alt="Kız Kulesi" width="400" />
+      <p>
+        Kız Kulesi, Azerbaycan'ın başkenti Bakü'nün İçeri Şehir bölgesinde yer alır.
+        UNESCO Dünya Mirası Listesi'nde yer alan bu tarihi yapı, 12. yüzyılda inşa edilmiştir.
+        Kalenin mimarisi ve yapım amacı hakkında hâlâ birçok gizemli teori vardır.
+      </p>
+      <p>
+        Bakü'nün simgelerinden biri olan Kız Kulesi, hem yerli hem yabancı turistlerin ilgisini çekmektedir.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ayşenur Askerli</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    const currentUrl = window.location.pathname;
+    links.forEach(link => {
+      if (link.getAttribute('href') === currentUrl.split("/").pop()) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+
+</body>
+</html>

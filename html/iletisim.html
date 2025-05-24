@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İletişim</title>
+  <link rel="stylesheet" href="iletisim.css">
+</head>
+<body>
+<nav>
+    <ul>
+      <li><a href="index.html" class="active">Hakkımda</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="sehrim.html">Şehrim</a></li>
+      <li><a href="mirasimiz.html">Mirasımız</a></li>
+      <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Kayıt Ol</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="takimimiz.html">Takımımız</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>İletişim</h1>
+    <form id="contactForm">
+      <label for="name">Adınız</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-posta</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mesajınız</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Gönder</button>
+    </form>
+
+    <p id="successMessage">✅ Mesajınız gönderildi!</p>
+  </div>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      form.reset();
+      successMessage.style.display = "block";
+
+      setTimeout(() => {
+        successMessage.style.display = "none";
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
