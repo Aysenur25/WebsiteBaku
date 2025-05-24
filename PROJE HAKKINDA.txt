@@ -1,0 +1,37 @@
+Proje Açıklaması:
+
+Bu proje, Web Teknolojileri dersi kapsamında hazırladığım kişisel bir web sitesidir. Sitenin temel amacı, HTML, CSS, JavaScript ve Bootstrap gibi web teknolojilerini kullanarak hem kişisel bilgilerimi sunmak hem de şehrim Bakü'nün kültürel mirasını tanıtmaktır. Proje, öğrenilen web tasarım becerilerini uygulamak ve bu teknolojileri etkin bir şekilde kullanarak modern ve kullanıcı dostu bir site oluşturmak amacıyla geliştirilmiştir. İşte projenin ana bölümleri:
+
+1. Ana Sayfa (Hakkımda)
+Bu sayfa, kişisel bilgilerin ve özgeçmişimin yer aldığı sayfadır. Kullanıcılar, burada benim hakkımda temel bilgilere ulaşabilir. Sayfada, adım, eğitim geçmişim, hobilerim ve ilgi alanlarım gibi kişisel veriler yer almaktadır. Bu bölümde kullanılan Bootstrap'ın grid sistemi ile sayfa tamamen mobil uyumlu ve farklı ekran boyutlarına göre otomatik olarak uyum sağlayacak şekilde tasarlandı.
+
+2. Şehrim Sayfası
+Bu sayfa, şehrim Bakü'yü tanıtan ve şehrin kültürel mirasını anlatan bir sayfadır. Bakü'nün tarihi, kültürel zenginlikleri ve gezilecek yerleri hakkında detaylı bilgiler bulunmaktadır. Ayrıca, şehrin simgelerinden biri olan Kız Kulesi gibi tarihi yapılar hakkında da açıklamalar yer almaktadır.
+
+Bu sayfada, şehrin en önemli ve turistik yerlerine ait fotoğraflar da sunulmuştur. Ayrıca, gezilecek yerler için bir slider (görüntü kaydırıcı) kullanarak, görsellerin ve açıklamaların görsel olarak daha etkili bir şekilde sunulmasını sağladım. Sayfa, tüm cihazlarda düzgün çalışacak şekilde Bootstrap ile tasarlandı.
+
+Nüfus: Bakü’nün nüfus bilgileri.
+
+Gezilecek Yerler: İçeri Şehir, Kız Kulesi, Bakü Bulvarı gibi önemli yerler.
+
+Fotoğraflar: Şehir hakkında ilgi çekici fotoğraflar yer almakta, bu fotoğraflar carousel (kaydırılabilir) alanında gösterilmektedir.
+
+3. Takımımız Sayfası
+Bu sayfa, Bakü'nün futbol takımlarından biri olan Neftçi hakkında bilgiler içeriyor. Takımın tarihi, başarıları ve önemli oyuncuları gibi bilgilere yer verilmektedir. Sayfada kullanılan görseller, takımı tanıtmak için büyük bir rol oynamaktadır ve siteye görsel olarak daha çekici bir hava katmaktadır.
+
+Başarılar: Neftçi’nin kazandığı şampiyonluklar ve kupa başarıları.
+
+Oyuncular: Takımın öne çıkan oyuncularının isimleri.
+
+Takım Fotoğrafları: Takımın fotoğrafları ile sayfa daha canlı hale getirildi. Fotoğraflar üzerine geçildiğinde bir büyütme efekti uygulanarak görsellerin dikkat çekici olması sağlandı.
+
+Genel Özellikler:
+Responsive Tasarım: Sitenin tüm sayfaları, Bootstrap'ın grid sistemi kullanılarak responsive (mobil uyumlu) şekilde tasarlandı. Bu sayede site, mobil cihazlardan masaüstü bilgisayarlara kadar farklı cihazlarda düzgün şekilde görüntülenebilir.
+
+Navigasyon Menü: Kullanıcıların site içinde rahatça gezinmesini sağlamak için her sayfada sabit bir navigasyon menüsü bulunmaktadır. Menüdeki linkler, kullanıcının hangi sayfada olduğunu belirlemek için "aktif" sınıfı ile vurgulanmıştır.
+
+Bootstrap Kullanımı: Bootstrap, sayfanın hızlı bir şekilde modern bir şekilde tasarlanmasını sağladı. Sayfa elemanlarının düzeni, renk şemaları, yazı tipleri ve görsel öğeler gibi birçok şey Bootstrap ile düzenlendi.
+
+JavaScript Etkileşimleri: Kullanıcı deneyimini artırmak için JavaScript ile aktif menü bağlantıları ve slider (görüntü kaydırıcı) gibi etkileşimler ekledim. Sayfanın yüklenmesi sırasında, aktif link otomatik olarak belirleniyor.
+
+Bu proje sayesinde HTML, CSS, JavaScript ve Bootstrap gibi teknolojileri kullanarak bir web sitesi oluşturmanın temel adımlarını öğrendim ve farklı cihazlarda uyumlu, kullanıcı dostu bir site tasarladım.
