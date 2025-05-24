@@ -43,3 +43,29 @@ body {
   .content {
     padding-top: 60px;
   }
+  .custom-navbar {
+  background-color: #000; /* siyah */
+  padding: 10px;
+}
+
+.custom-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.custom-navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar ul li a:hover,
+.custom-navbar ul li a.active {
+  background-color: #333;
+  border-radius: 5px;
+}

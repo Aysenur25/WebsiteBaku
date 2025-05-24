@@ -1,42 +1,47 @@
 nav {
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-    transition: font-weight 0.3s;
-  }
-  
-  nav ul li a.active {
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Navbar altında içerik görünsün diye boşluk bırak */
-  body {
-    padding-top: 60px;
-  }
-  
+  background-color: #000;
+  position: fixed;
+  top: 0;       /* zaten üstte */
+  right: 0;
+  left: 0;      /* sağ ve sol sıfır yaparak tam genişlikte olsun */
+  height: 50px; /* nav yüksekliğini sabitle */
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* içerik dikey ortada */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px; /* üst ve alt padding sıfır, yanlara 20px */
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  transition: font-weight 0.3s;
+  line-height: 50px; /* linkler nav yüksekliğine eşit, dikey ortalanır */
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar yüksekliği kadar padding ver, böylece içerik nav altında kalmaz */
+body {
+  padding-top: 50px;
+  margin: 0;
+}
